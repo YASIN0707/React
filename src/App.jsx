@@ -1,9 +1,10 @@
-import Messagewithoutbinding from './Components/Messagewithoutbinding'
-import React,  {Fragment} from 'react'
+import React from 'react'
+import CompA from './propsdrilling/CompA'
 let App=()=>{ 
+  
   return <div>
-    <h1>App comp</h1>
-    <Messagewithoutbinding/>
+    <h1>Compenent A</h1>
+   <CompA/>
   </div>
 }
 export default App
