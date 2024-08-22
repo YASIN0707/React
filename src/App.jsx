@@ -5,7 +5,8 @@ import Services from './Pages/Services';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Login from './Pages/Login';
-
+import Sign from './Pages/Sign';
+import Registration from './Pages/Registration';
 const App = () => {
   return (
     <div>
@@ -19,6 +20,9 @@ const App = () => {
               <li className='nav-link'><Link to='/services'>Services</Link></li>
               <li className='nav-link'><Link to='/Contact'>Contact</Link></li>
               <li className='nav-link'><Link to='/Login'>Login</Link></li>
+              <li className='nav-link'><Link to='/Sign'>Sign details</Link></li>
+              <li className='nav-link'><Link to='/Registration'>Registration</Link></li>
+              
             </ul>
           </div>
         </nav>
@@ -28,6 +32,8 @@ const App = () => {
           <Route path='/Services' element={<Services />} />
           <Route path='/Contact' element={<Contact/>}/>
           <Route path='/Login' element={<Login/>}/>
+          <Route path='/Sign' element={<Sign/>}/>
+          <Route path='/Registration' element={<Registration/>}/>
         </Routes>
       </Router>
     </div>
